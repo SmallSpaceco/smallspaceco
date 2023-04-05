@@ -25,7 +25,7 @@
       <!-- logo -->
       <li class="logo">
         <a href="/">
-          <img src="/src/img/logolevel.png" alt="logo" class="w-auto h-12">
+          <img src="/src/img/logolevel.png" alt="logo" class="w-auto sm:h-12 h-8">
         </a>
     </ul>
     <ul class="">
@@ -33,7 +33,10 @@
         <a href="/prijzen">Prijzen</a>
       </li>
       <li class="">
-        <a href="/overons">Marketing</a>
+        <a href="/marketing">Marketing</a>
+      </li>
+      <li class="">
+        <a href="/overons">Over ons</a>
       </li>
       <ul class="px-2">
       <li class="">

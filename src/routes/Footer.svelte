@@ -29,12 +29,11 @@
         </div>
       </div>
       <div class="sm:ml-0 ml-8 flex flex-col">
-        <a href="/" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Prijzen</a>
-        <a href="/" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Ons werk</a>
-        <a href="/" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Contact</a>
+        <a href="/prijzen" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Prijzen</a>
+        <a href="/" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Marketing</a>
+        <a href="/" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Over ons</a>
       </div>
       <div class="flex flex-col">
-        <h2 class="text-base font-semibold leading-4 text-gray-800 dark:text-white">Support</h2>
         <a href="/" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Algemene voorwaarden</a>
         <a href="/" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Privacy</a>
       </div>

@@ -1,6 +1,7 @@
 <script lang="ts">
     import { scale } from 'svelte/transition'
     import { onMount, onDestroy } from 'svelte';
+    import Contact from '../Contact.svelte';
     import 'iconify-icon'
     let ready = false;
     onMount(() => ready = true);

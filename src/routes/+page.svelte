@@ -122,21 +122,21 @@ on:inview_change={handleInView}
       <div class="mx-auto flex max-w-xs flex-col gap-y-4">
         <dt class="text-base leading-7 text-gray-500">Meer omzet</dt>
         {#if isInView}
-        <dd in:fade="{{ duration: 1000 }}" class="order-first text-3xl font-semibold tracking-tight sm:text-5xl">80%</dd>
+        <dd in:fade="{{ duration: 2000 }}" class="order-first text-3xl font-semibold tracking-tight sm:text-5xl">80%</dd>
         {/if}
       </div>
 
       <div class="mx-auto flex max-w-xs flex-col gap-y-4">
         <dt class="text-base leading-7 text-gray-500">Maandelikse views op social-media</dt>
         {#if isInView}
-        <dd in:fade="{{ duration: 1000 }}" class="order-first text-3xl font-semibold tracking-tight sm:text-5xl">700.000</dd>
+        <dd in:fade="{{ duration: 2000 }}" class="order-first text-3xl font-semibold tracking-tight sm:text-5xl">700.000</dd>
         {/if}
       </div>
 
       <div class="mx-auto flex max-w-xs flex-col gap-y-4">
         <dt class="text-base leading-7 text-gray-500">Per week meer tijd voor rijlessen</dt>
         {#if isInView}
-        <dd in:fade="{{ duration: 1000 }}" class="order-first text-3xl font-semibold tracking-tight sm:text-5xl">8 uur</dd>
+        <dd in:fade="{{ duration: 2000 }}" class="order-first text-3xl font-semibold tracking-tight sm:text-5xl">8 uur</dd>
         {/if}
       </div>
     </dl>
@@ -152,7 +152,7 @@ on:inview_change={handleInView}
       on:inview_change={handleInView2}
       >
       { #if isInView2 }
-        <div in:fade="{{ duration: 1000 }}" class="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+        <div in:fade="{{ duration: 2000 }}" class="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
           <img class="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0" src="/src/img/groei.jpg" alt="marketing">
           <div class="absolute inset-0 bg-gray-900 mix-blend-multiply"></div>
           <div class="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl" aria-hidden="true">
@@ -256,7 +256,7 @@ on:inview_change={handleInView}
       on:inview_change={handleInView3}
       >
       { #if isInView3 }
-        <img in:fade="{{ duration: 1000 }}" class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="/src/img/foto.png" alt="">
+        <img in:fade="{{ duration: 2000 }}" class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="/src/img/foto.png" alt="">
       { /if }
       </div>
       <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
