@@ -25,7 +25,7 @@
       <!-- logo -->
       <li class="logo">
         <a href="/">
-          <img src="/static/logolevel.png" alt="logo" class="w-auto sm:h-12 h-8">
+          <img src="/logolevel.png" alt="logo" class="w-auto sm:h-12 h-8">
         </a>
     </ul>
     <ul class="">
