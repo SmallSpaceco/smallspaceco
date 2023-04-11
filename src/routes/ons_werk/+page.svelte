@@ -9,7 +9,7 @@
   onDestroy(() => ready = false);
 
   //make foto div infinty scroll horizontally
-  let images = ["/static/thomas_in_auto.webp", "/static/spiegel.gif", "/static/highfive_op_auto.webp", "/static/in_auto.gif", "/static/thomas_naast_auto.webp", "/static/naast_auto.gif"]
+  let images = ["/thomas_in_auto.webp", "/spiegel.gif", "/highfive_op_auto.webp", "/in_auto.gif", "/thomas_naast_auto.webp", "/naast_auto.gif"]
   let translateX = 0;
   let animationFrame: number;
 
@@ -89,17 +89,17 @@
             <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
               <div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                 <div class="relative">
-                  <img src="/static/groei.jpg" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <img src="/groei.jpg" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                   <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
                 </div>
               </div>
               <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                 <div class="relative">
-                  <img src="/static/thomas_in_auto.webp" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <img src="/thomas_in_auto.webp" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                   <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
                 </div>
                 <div class="relative">
-                  <img src="/static/leerling_en_docent.webp" alt="" class="object-right aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <img src="/leerling_en_docent.webp" alt="" class="object-right aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
                   <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
                 </div>
               </div>

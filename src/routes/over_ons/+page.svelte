@@ -13,7 +13,7 @@
         <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
           <p class="text-lg leading-8">LevelMarketing versterkt jouw onderneming met effectieve content en innovatieve marketingstrategieën. Met een persoonlijke, resultaatgerichte aanpak vertellen we jouw unieke verhaal.</p>
         </div>
-        <img src="/static/thomas_naast_auto.webp" alt="" class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36">
+        <img src="/thomas_naast_auto.webp" alt="" class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36">
       </div>
     </div>
   </div>
@@ -27,7 +27,7 @@
     </div>
     <ul class="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
       <li class="flex flex-col gap-10 pt-12 sm:flex-row">
-        <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-scale-down" src="/static/tino.png" alt="">
+        <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-scale-down" src="/tino.png" alt="">
         <div class="max-w-xl flex-auto">
           <h3 class="text-lg font-semibold leading-8 tracking-tight text-[#574AE2]">Valentino Kuldipsingh</h3>
           <p class="text-base leading-7">Projectmanager / Communicatie</p>
@@ -35,7 +35,7 @@
         </div>
       </li>
       <li class="flex flex-col gap-10 pt-12 sm:flex-row">
-        <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-scale-down" src="/static/daan.png" alt="">
+        <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-scale-down" src="/daan.png" alt="">
         <div class="max-w-xl flex-auto">
           <h3 class="text-lg font-semibold leading-8 tracking-tight text-[#574AE2]">Daan Zeemeijer</h3>
           <p class="text-base leading-7">Marketing strateeg / Communicatie</p>
@@ -43,7 +43,7 @@
         </div>
       </li>
       <li class="flex flex-col gap-10 pt-12 sm:flex-row">
-        <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-scale-down" src="/static/chriss.png" alt="">
+        <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-scale-down" src="/chriss.png" alt="">
         <div class="max-w-xl flex-auto">
           <h3 class="text-lg font-semibold leading-8 tracking-tight text-[#574AE2]">Chris Prosman</h3>
           <p class="text-base leading-7">Full stack web developer / Videograaf</p>

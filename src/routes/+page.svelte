@@ -95,7 +95,7 @@ let roller: number;
           <p class="mt-3 text-white">Wil je als rijschool jouw online aanwezigheid verbeteren en meer leerlingen aantrekken? Ons team van experts biedt website-ontwerp- en online marketingdiensten om jouw rijschool te helpen groeien. Wij ontwerpen een aantrekkelijke website met duidelijke informatie over rijlessen en prijzen, en zetten doelgerichte marketingcampagnes op om meer potentiële leerlingen aan te trekken. Ontdek hoe onze aanpak heeft gezorgd voor een significante toename in websiteverkeer en aanvragen voor rijlessen in onze case study. </p>
           <p><a href="/ons_werk" role="button" class="bg-white text-black mt-8 w-48 font-bold">Meer informatie <span aria-hidden="true">→</span></a></p>
         </div>
-        <img class="object-contain order-1 ml-auto md:order-2 md:w-2/4 w-2/3 md:mb-0 mb-5" src="/static/macbook.webp" alt="macbook">
+        <img class="object-contain order-1 ml-auto md:order-2 md:w-2/4 w-2/3 md:mb-0 mb-5" src="/macbook.webp" alt="macbook">
       </div>
 </div>
 
@@ -155,7 +155,7 @@ on:inview_change={handleInView}
       >
       { #if isInView2 }
         <div in:fade="{{ duration: 2000 }}" class="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
-          <img class="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0" src="/static/groei.jpg" alt="marketing">
+          <img class="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0" src="/groei.jpg" alt="marketing">
           <div class="absolute inset-0 bg-gray-900 mix-blend-multiply"></div>
           <div class="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl" aria-hidden="true">
             <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#cf04aa] to-[#574AE2] opacity-40" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
@@ -258,7 +258,7 @@ on:inview_change={handleInView}
       on:inview_change={handleInView3}
       >
       { #if isInView3 }
-        <img in:fade="{{ duration: 2000 }}" class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="/static/foto.webp" alt="">
+        <img in:fade="{{ duration: 2000 }}" class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="/foto.webp" alt="">
       { /if }
       </div>
       <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
