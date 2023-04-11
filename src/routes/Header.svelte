@@ -25,20 +25,20 @@
       <!-- logo -->
       <li class="logo">
         <a href="/">
-          <img src="/src/img/logolevel.png" alt="logo" class="w-auto sm:h-12 h-8">
+          <img src="/static/logolevel.png" alt="logo" class="w-auto sm:h-12 h-8">
         </a>
     </ul>
     <ul class="">
-      <li class="contrast">
-        <a href="/prijzen">Prijzen</a>
+      <li class="hover:text-indigo-500">
+        <a href="/ons_werk">Services</a>
+      </li>
+      <li class="hover:text-indigo-500">
+        <a href="/over_ons">Over ons</a>
       </li>
       <li class="">
-        <a href="/marketing">Marketing</a>
+        <a href="/contact" role="button" class="buttongradient">Contact</a>
       </li>
-      <li class="">
-        <a href="/overons">Over ons</a>
-      </li>
-      <ul class="px-2">
+      <ul class="sm:px-2">
       <li class="">
         <div class="flex items-center justify-center">
           <form class="translate-y-3" method="POST" use:enhance={submitUpdateTheme} on:submit|preventDefault={toggleTheme}>
@@ -62,4 +62,19 @@
   .darklight{
     border: 0;
   }
+
+  .buttongradient{
+    background-image: linear-gradient(to right top, #574ae2, #a431c9, #cf04aa, #ea0088, #f61067);
+    color: white;
+    border : 0;
+    border-radius: 10px;
+    box-shadow: rgba(165, 54, 217, 0.1) 0px 0px 0px 6px, rgba(0, 0, 0, 0.25) 0px 2px 8px 0px; 
+}
+
+.buttongradient:hover{
+    background-image: linear-gradient(to right top, #6b3cbc, #aa2bbb, #ca068c, #ea0085, #e30e60);
+    box-shadow: rgba(165, 54, 217, 0.1) 0px 0px 0px 10px, rgba(0, 0, 0, 0.25) 0px 2px 8px 0px; 
+    --tw-text-opacity: 1;
+    color: rgb(209 213 219 / var(--tw-text-opacity));
+}
 </style>

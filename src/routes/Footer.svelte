@@ -29,9 +29,9 @@
         </div>
       </div>
       <div class="sm:ml-0 ml-8 flex flex-col">
-        <a href="/prijzen" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Prijzen</a>
-        <a href="/" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Marketing</a>
-        <a href="/" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Over ons</a>
+        <a href="/over_ons" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Over ons</a>
+        <a href="/ons_werk" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Ons werk</a>
+        <a href="/contact" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Contact</a>
       </div>
       <div class="flex flex-col">
         <a href="/" class="focus:outline-none focus:underline hover:text-gray-500 text-base leading-4 mt-6 text-gray-800 dark:text-white cursor-pointer">Algemene voorwaarden</a>

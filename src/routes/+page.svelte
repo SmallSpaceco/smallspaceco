@@ -4,6 +4,7 @@ import { slide, fade } from 'svelte/transition';
 import { inview } from 'svelte-inview';
 import type { ObserverEventDetails } from 'svelte-inview';
 import Contact from './Contact.svelte';
+import { afterUpdate } from 'svelte';
 import 'iconify-icon';
 
 //animatie wanneer in beeld
@@ -20,6 +21,7 @@ const handleInView3 = ({ detail }: CustomEvent<ObserverEventDetails>) => {
     isInView3 = detail.inView;
 };
 
+
 //animatie the shape when scrolling
 let y = 0;
 let svgHeight: number;
@@ -30,7 +32,7 @@ $: svgHeight = Math.max(0, Math.min(y, maxSvgHeight));
 $: svgHeight2 = Math.max(0,Math.min(y-700, maxSvgHeight));
 
 //animatie scrollen door text
-let greetings = ['Meer leerlingen', 'Meer omzet', 'Meer tijd'];
+let greetings = ['Meer leerlingen', 'Meer winst', 'Meer tijd'];
 let index = 0;
 let roller: number;
 	
@@ -49,7 +51,6 @@ let roller: number;
 
 <svelte:window bind:scrollY={y} />
 <main>
-
 <!-- Banner -->
 <div class="relative isolate px-6 lg:px-6">
   <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
@@ -58,18 +59,18 @@ let roller: number;
   <div class="mx-auto max-w-2xl py-32 md:py-28">
     <div class="hidden sm:mb-8 sm:flex sm:justify-center">
       <div class="relative rounded-full px-3 py-1 text-sm leading-6 ring-1 ring-gray-500/10 hover:ring-gray-500/20">
-        Bekijk ons werk bij andere rijscholen <a href="/" class="font-semibold text-[#cf04aa]"><span class="absolute inset-0" aria-hidden="true"></span>Meer lezen <span aria-hidden="true">&rarr;</span></a>
+        Bekijk ons werk bij andere rijscholen <a href="/ons_werk" class="font-semibold text-[#cf04aa]"><span class="absolute inset-0" aria-hidden="true"></span>Meer lezen <span aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
     <div class="text-center">
-      <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">Rijschool marketing </h1>
+      <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">Jouw weg naar</h1>
       {#key index}
       <h2 transition:slide|local class="text-2xl font-bold tracking-tight sm:text-4xl">{greetings[index]}</h2>
       {/key}
-      <p class="mt-6 text-lg leading-8 text-gray-500">Zonder stress meer leerlingen, groei uw rijschool.</p>
+      <p class="mt-6 text-lg leading-8 text-gray-500">Klaar om op te schalen? Plan een gratis persoonlijk gesprek!</p>
       <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="/" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 buttongradient">Vrijblijvend contact</a>
-        <a href="/prijzen" class="text-sm font-semibold leading-6 contrast">Tarieven bekijken<span aria-hidden="true">→</span></a>
+        <a href="/contact" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 buttongradient">Begin vandaag</a>
+        <a href="/over_ons" class="text-sm font-semibold leading-6 contrast">Ontmoet LevelMarketing<span aria-hidden="true">→</span></a>
       </div>
     </div>
   </div>
@@ -78,23 +79,23 @@ let roller: number;
   </div>
 </div>
 
-<!-- Make a animation with the shape when scrolling -->
-<div class="custom-shape-divider-bottom-1679581777">
+<!-- shape -->
+<div class="custom-shape-divider-bottom-1679581777 pb-[-5px]">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" height={svgHeight}    >
         <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
     </svg>
 </div>
 
-<!-- blauw -->
-<div class="bg-[#574AE2] pt-20 pb-20">
+<!-- content -->
+<div class="bg-[#574AE2] pt-20 pb-20 relative">
     <!-- website plaatje en text -->
     <div class="flex flex-col md:flex-row ml-5 pr-0 py-8 rounded-l-lg">
         <div class="order-2 md:order-1 mx-5 rounded-lg">
-          <h1 class="text-white text-3xl font-bold">Ons werk</h1>
+          <h1 class="text-white text-3xl font-bold">Onze aanpak</h1>
           <p class="mt-3 text-white">Wil je als rijschool jouw online aanwezigheid verbeteren en meer leerlingen aantrekken? Ons team van experts biedt website-ontwerp- en online marketingdiensten om jouw rijschool te helpen groeien. Wij ontwerpen een aantrekkelijke website met duidelijke informatie over rijlessen en prijzen, en zetten doelgerichte marketingcampagnes op om meer potentiële leerlingen aan te trekken. Ontdek hoe onze aanpak heeft gezorgd voor een significante toename in websiteverkeer en aanvragen voor rijlessen in onze case study. </p>
-          <p><a href="/" role="button" class="bg-white text-black mt-2 w-48 font-bold">Meer informatie</a></p>
+          <p><a href="/ons_werk" role="button" class="bg-white text-black mt-8 w-48 font-bold">Meer informatie <span aria-hidden="true">→</span></a></p>
         </div>
-        <img class="object-contain order-1 ml-auto md:order-2 md:w-2/4 w-2/3 md:mb-0 mb-5" src="/src/img/macbook.png" alt="macbook">
+        <img class="object-contain order-1 ml-auto md:order-2 md:w-2/4 w-2/3 md:mb-0 mb-5" src="/static/macbook.webp" alt="macbook">
       </div>
 </div>
 
@@ -104,12 +105,13 @@ let roller: number;
         <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
     </svg>
   </div>
-
+  
 <!-- tekst met kleur -->
 <div class="py-8 mt-10 px-4 md:px-8 text-center">
     <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient">Geef jouw rijschool een online boost met een professionele website</h1>
-    <p class="text-lg md:text-xl text-white">Haal meer uit jouw rijschool met een website die jouw klanten aantrekt en behoudt. Investeer vandaag nog in een professionele website en zie jouw rijschool groeien!</p>
+    <p class="text-lg md:text-xl text-white ">Haal meer uit jouw rijschool met een website die jouw klanten aantrekt en behoudt. Investeer vandaag nog in een professionele website en zie jouw rijschool groeien!</p>
 </div>
+
 <!-- cijfers -->
 <div class="py-24 sm:py-32"
 use:inview={{ unobserveOnEnter: true, rootMargin: '-20%' }}
@@ -153,7 +155,7 @@ on:inview_change={handleInView}
       >
       { #if isInView2 }
         <div in:fade="{{ duration: 2000 }}" class="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
-          <img class="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0" src="/src/img/groei.jpg" alt="marketing">
+          <img class="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0" src="/static/groei.jpg" alt="marketing">
           <div class="absolute inset-0 bg-gray-900 mix-blend-multiply"></div>
           <div class="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl" aria-hidden="true">
             <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#cf04aa] to-[#574AE2] opacity-40" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
@@ -256,7 +258,7 @@ on:inview_change={handleInView}
       on:inview_change={handleInView3}
       >
       { #if isInView3 }
-        <img in:fade="{{ duration: 2000 }}" class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="/src/img/foto.png" alt="">
+        <img in:fade="{{ duration: 2000 }}" class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="/static/foto.webp" alt="">
       { /if }
       </div>
       <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
@@ -295,7 +297,7 @@ on:inview_change={handleInView}
 
 <!-- center a button -->
 <div class="flex justify-center mb-10">
-    <a href="/prijzen" role="button" class="bg-white text-black mt-2 w-48 font-bold">Tarieven bekijken</a>
+    <a href="/ons_werk" role="button" class="bg-white text-black mt-2 w-48 font-bold">Ons werk bekijken</a>
 </div>
 <Contact/>
 </main>
