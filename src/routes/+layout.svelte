@@ -4,6 +4,10 @@ import Header from './Header.svelte';
 import Footer from './Footer.svelte';
 import '../app.css';
 </script>
+<svelte:head>
+  <link rel="icon" type="image/png" href="/favicon" />
+  <title>LevelMarketing</title>
+</svelte:head>
 
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">

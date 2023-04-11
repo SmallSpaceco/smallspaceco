@@ -43,7 +43,9 @@
     cancelAnimationFrame(animationFrame);
   });
 </script>
-
+<svelte:head>
+    <title>Services - LevelMarketing</title> 
+</svelte:head>
 <!-- achtergrond -->
 <div class="isolate overflow-hidden mb-0">
   <div class="mx-auto max-w-7xl px-6 pb-0 pt-8 text-center">

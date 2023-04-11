@@ -3,6 +3,9 @@
   import { onMount, afterUpdate } from 'svelte'
   import Contact from '../Contact.svelte';
 </script>
+<svelte:head>
+    <title>Over ons - LevelMarketing</title> 
+</svelte:head>
 
   <!-- Hero section -->
   <div class="relative isolate -z-10 overflow-hidden">
