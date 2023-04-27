@@ -88,7 +88,7 @@
             </div>
           </div>
           <div class="flex mt-3">
-            <input type="checkbox" class="mr-3" value="1" id="OPT_IN" name="OPT_IN" required />
+            <input type="checkbox" class="mr-2 mt-1 mb-[0.125rem] block min-h-[1rem] pl-[1rem]" value="1" id="OPT_IN" name="OPT_IN" required />
             <div>
               <p>Ik ga akkoord om informatieve e-mails te ontvangen en ik accepteer de privacyverklaring.</p>
               <p class="text-xs mt-1.5">U kunt zich te allen tijde uitschrijven via de link in onze e-mails.</p>
