@@ -1,9 +1,10 @@
 <script lang='ts'>
   import { page } from '$app/stores'
   import 'iconify-icon';
+
+  // send form to SendInBlue
   let succes = '';
   let foutmelding = '';
-
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -19,7 +20,7 @@
         attributes: {
           FIRSTNAME: event.target.FIRSTNAME.value,
           LASTNAME: event.target.LASTNAME.value,
-          SMS: event.target.SMS.value,
+          SMS: "+31" + event.target.SMS.value,
           RIJSCHOOL: event.target.RIJSCHOOL.value,
         },
         listIds: [5],
@@ -71,12 +72,14 @@
                 <input id="RIJSCHOOL" name="RIJSCHOOL" type="text" placeholder="Uw Rijschool naam" data-required="true" required class="placeholder:text-gray-500 block w-full rounded-md border-0 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               </div>
             </div>
+
             <div>
               <label for="SMS" class="block text-sm font-semibold leading-6">Telefoonnummer</label>
               <div class="mt-2.5">
                 <input type="tel" name="SMS" id="SMS" placeholder="0612345678" data-required="true" required class="block w-full rounded-md border-0 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               </div>
             </div>
+
             <div>
               <label for="EMAIL" class="block text-sm font-semibold leading-6" data-required="*">E-mail</label>
               <div class="mt-2.5">

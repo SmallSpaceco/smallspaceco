@@ -26,6 +26,7 @@
 		"@picocss/pico": "^1.5.7",
 		"iconify-icon": "^1.0.7",
 		"svelte-inview": "^4.0.0",
-		"svelte-legos": "^0.1.7"
+		"svelte-legos": "^0.1.7",
+		"svelte-tel-input": "^2.0.1"
 	}
 }
