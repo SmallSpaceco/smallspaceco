@@ -76,7 +76,7 @@
             <div>
               <label for="SMS" class="block text-sm font-semibold leading-6">Telefoonnummer</label>
               <div class="mt-2.5">
-                <input type="tel" name="SMS" id="SMS" placeholder="0612345678" data-required="true" required class="block w-full rounded-md border-0 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <input type="tel" name="SMS" id="SMS" placeholder="085 080 5848" data-required="true" required class="block w-full rounded-md border-0 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               </div>
             </div>
 
@@ -103,7 +103,7 @@
             <!-- bellen is sneller -->
             <div class="mt-6 text-sm text-center text-gray-500">
                 <h1 class="text-xl mt-5">Bellen is nog sneller</h1>
-              <p>24/7 bereikbaar: <a href="tel:0612345678" class="text-indigo-600 hover:text-indigo-500">+31 6 123 45 678</a></p>
+              <p>24/7 bereikbaar: <a href="tel:0850805848" class="text-indigo-600 hover:text-indigo-500">085 080 5848</a></p>
           </div>
         </form>
         <div class="lg:mt-6 lg:w-80 lg:flex-none">
@@ -115,7 +115,7 @@
             </div>
             <div class="align-middle flex mt-3">
               <iconify-icon class="mr-2" icon="mdi:telephone" style="color: white;" width="32" height="32"></iconify-icon>
-              <h2>+31 642339204</h2>
+              <h2>085 080 5848</h2>
             </div>
           </div>
           <figure class="mt-10">
