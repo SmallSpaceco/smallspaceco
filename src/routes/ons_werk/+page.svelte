@@ -229,7 +229,7 @@
         <h1 class="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">Marketing die past bij uw rijschool</h1>
       </div>
       <div class="relative mt-6">
-        <p class="mx-auto max-w-2xl text-lg leading-8 text-white/60">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum.</p>        
+        <p class="mx-auto max-w-2xl text-lg leading-8 text-white/60"> Wij bieden een volledig pakket aan diensten aan voor een vast bedrag per maand. Zo weet u precies waar u aan toe bent en komt u niet voor verassingen te staan. </p>        
         { #if ready}
         <svg in:scale={{ delay: 250, duration: 1000 }}  viewBox="0 0 1208 1024" class="absolute -top-10 left-1/2 -z-10 h-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:-top-12 md:-top-20 lg:-top-12 xl:top-0">
             <ellipse cx="604" cy="512" fill="url(#6d1bd035-0dd1-437e-93fa-59d316231eb0)" rx="604" ry="512" />
