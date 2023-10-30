@@ -32,7 +32,7 @@ $: svgHeight = Math.max(0, Math.min(y, maxSvgHeight));
 $: svgHeight2 = Math.max(0,Math.min(y-700, maxSvgHeight));
 
 //animatie scrollen door text
-let greetings = ['Meer leerlingen', 'Meer winst', 'Meer tijd'];
+let greetings = ['Meer klanten', 'Meer winst', 'Meer tijd'];
 let index = 0;
 let roller: number;
 	
@@ -59,18 +59,18 @@ let roller: number;
   <div class="mx-auto max-w-2xl py-32 md:py-28">
     <div class="hidden sm:mb-8 sm:flex sm:justify-center">
       <div class="relative rounded-full px-3 py-1 text-sm leading-6 ring-1 ring-gray-500/10 hover:ring-gray-500/20">
-        Bekijk ons werk bij andere rijscholen <a href="/ons_werk" class="font-semibold text-[#cf04aa]"><span class="absolute inset-0" aria-hidden="true"></span>Meer lezen <span aria-hidden="true">&rarr;</span></a>
+        Bekijk ons werk bij andere Schoonheidsklinieken <a href="/ons_werk" class="font-semibold text-[#cf04aa]"><span class="absolute inset-0" aria-hidden="true"></span>Meer lezen <span aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
     <div class="text-center">
       <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">Jouw weg naar</h1>
       {#key index}
-      <h2 transition:slide|local class="text-2xl font-bold tracking-tight sm:text-4xl">{greetings[index]}</h2>
+      <h2 transition:slide|local class="text-2xl font-bold tracking-tight sm:text-4xl pt-3">{greetings[index]}</h2>
       {/key}
       <p class="mt-6 text-lg leading-8 text-gray-500">Klaar om op te schalen? Plan een gratis persoonlijk gesprek!</p>
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <a href="/contact" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 buttongradient">Begin vandaag</a>
-        <a href="/over_ons" class="text-sm font-semibold leading-6 contrast">Ontmoet LevelMarketing<span aria-hidden="true">→</span></a>
+        <a href="/over_ons" class="text-sm font-semibold leading-6 contrast">Ontmoet SmallSpace<span aria-hidden="true">→</span></a>
       </div>
     </div>
   </div>
@@ -92,7 +92,8 @@ let roller: number;
     <div class="flex flex-col md:flex-row ml-5 pr-0 py-8 rounded-l-lg">
         <div class="order-2 md:order-1 mx-5 rounded-lg">
           <h1 class="text-white text-3xl font-bold">Onze aanpak</h1>
-          <p class="mt-3 text-white">Wil je als rijschool jouw online aanwezigheid verbeteren en meer leerlingen aantrekken? Ons team van experts biedt website-ontwerp- en online marketingdiensten om jouw rijschool te helpen groeien. Wij ontwerpen een aantrekkelijke website met duidelijke informatie over rijlessen en prijzen, en zetten doelgerichte marketingcampagnes op om meer potentiële leerlingen aan te trekken. Ontdek hoe onze aanpak heeft gezorgd voor een significante toename in websiteverkeer en aanvragen voor rijlessen in onze case study. </p>
+          <p class="mt-3 text-white">Wil je als schoonheidskliniek jouw online aanwezigheid verbeteren en meer klanten aantrekken? Ons team van experts biedt website-ontwerp- en online marketingdiensten om jouw schoonheidskliniek te helpen groeien. 
+            Wij ontwerpen een aantrekkelijke website met duidelijke informatie over behandelingen en prijzen, en zetten doelgerichte marketingcampagnes op om meer potentiële klanten aan te trekken. Ontdek hoe onze aanpak heeft gezorgd voor een significante toename in websiteverkeer en aanvragen voor behandelingsen in onze case study. </p>
           <p><a href="/ons_werk" role="button" class="bg-white text-black mt-8 w-48 font-bold">Meer informatie <span aria-hidden="true">→</span></a></p>
         </div>
         <img class="object-contain order-1 ml-auto md:order-2 md:w-2/4 w-2/3 md:mb-0 mb-5" src="/macbook.webp" alt="macbook">
@@ -108,8 +109,8 @@ let roller: number;
   
 <!-- tekst met kleur -->
 <div class="py-8 mt-10 px-4 md:px-8 text-center">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient">Geef jouw rijschool een online boost met een professionele website</h1>
-    <p class="text-lg md:text-xl text-white ">Haal meer uit jouw rijschool met een website die jouw klanten aantrekt en behoudt. Investeer vandaag nog in een professionele website en zie jouw rijschool groeien!</p>
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient">Geef jouw schoonheidskliniek een online boost met een professionele website</h1>
+    <p class="text-lg md:text-xl text-white mx-[500px]">Haal meer uit jouw schoonheidskliniek met een website die jouw klanten aantrekt en behoudt. Investeer vandaag nog in een professionele website en zie jouw schoonheidskliniek groeien!</p>
 </div>
 
 <!-- cijfers -->
@@ -136,7 +137,7 @@ on:inview_change={handleInView}
       </div>
 
       <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-        <dt class="text-base leading-7 text-gray-500">Per week meer tijd voor rijlessen</dt>
+        <dt class="text-base leading-7 text-gray-500">Per week meer tijd voor behandelingsen</dt>
         {#if isInView}
         <dd in:fade="{{ duration: 2000 }}" class="order-first text-3xl font-semibold tracking-tight sm:text-5xl">8 uur</dd>
         {/if}
@@ -168,7 +169,7 @@ on:inview_change={handleInView}
             </svg>
             <!-- quote -->
             <blockquote class="mt-6 text-xl font-semibold leading-8 text-white border-[#574AE2]">
-              <p class="text-white">“Het is niet de beste rijschool die de meeste klanten heeft, het is de rijschool die het beste weet hoe ze zichzelf kan verkopen.”</p>
+              <p class="text-white">“Het is niet de beste schoonheidskliniek die de meeste klanten heeft, het is de schoonheidskliniek die het beste weet hoe ze zichzelf kan verkopen.”</p>
             </blockquote>
 
             <!-- author -->
@@ -179,11 +180,11 @@ on:inview_change={handleInView}
       </div>
       <div>
         <div class="text-base leading-7 text-gray-700 lg:max-w-lg">
-          <p class="text-base font-semibold leading-7 text-[#574AE2]">Waarom ben jij de juiste rijschool?</p>
+          <p class="text-base font-semibold leading-7 text-[#574AE2]">Waarom ben jij de juiste schoonheidskliniek?</p>
           <h1 class="mt-2 text-3xl font-bold tracking-tight text-[#cf04aa] sm:text-4xl">Het belang van marketing</h1>
           <div class="max-w-xl">
-            <p class="mt-6">Als rijschool is marketing onmisbaar om zichtbaar te zijn voor potentiële leerlingen. Het is de beste manier om uw rijschool te onderscheiden van concurrenten en om uw merk te promoten.</p>
-            <p class="mt-8">Ons marketingbureau voor rijscholen biedt op maat gemaakte oplossingen om uw rijschool te laten groeien. Van het ontwerpen van een aantrekkelijke website tot het opzetten van effectieve social media campagnes en advertenties, wij helpen u om meer klanten aan te trekken en uw rijschool naar nieuwe hoogten te brengen.</p>
+            <p class="mt-6">Als schoonheidskliniek is marketing onmisbaar om zichtbaar te zijn voor potentiële klanten. Het is de beste manier om uw schoonheidskliniek te onderscheiden van concurrenten en om uw merk te promoten.</p>
+            <p class="mt-8">Ons marketingbureau voor schoonheidsklinieken biedt op maat gemaakte oplossingen om uw schoonheidskliniek te laten groeien. Van het ontwerpen van een aantrekkelijke website tot het opzetten van effectieve social media campagnes en advertenties, wij helpen u om meer klanten aan te trekken en uw schoonheidskliniek naar nieuwe hoogten te brengen.</p>
           </div>
       </div>
     </div>
@@ -200,7 +201,7 @@ on:inview_change={handleInView}
         <p class="text-xl font-bold leading-7 text-[#574AE2]">Meer omzet</p>
       </dt>
       <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600 font-light">
-        <p class="flex-auto">Meer leerlingen en tijd voor rijlessen = meer omzet</p>
+        <p class="flex-auto">Meer klanten en tijd voor behandelingsen = meer omzet</p>
       </dd>
     </div>
 
@@ -210,10 +211,10 @@ on:inview_change={handleInView}
         <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-[#574AE2]">
           <iconify-icon icon="material-symbols:shield" style="color: white;" width="32" height="32"></iconify-icon>
         </div>
-        <p class="text-xl font-bold leading-7 text-[#574AE2]">Verzekerd leerlingen</p>
+        <p class="text-xl font-bold leading-7 text-[#574AE2]">Verzekerd klanten</p>
       </dt>
       <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-        <p class="flex-auto">Altijd een volle agenda, zodat u kan focussen op de rijlessen.</p>
+        <p class="flex-auto">Altijd een volle agenda, zodat u kan focussen op de behandelingsen.</p>
       </dd>
     </div>
 
@@ -222,10 +223,10 @@ on:inview_change={handleInView}
         <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-[#574AE2]">
           <iconify-icon icon="mdi:search-web" style="color: white;" width="32" height="32"></iconify-icon>
         </div>
-        <p class="text-xl font-bold leading-7 text-[#574AE2]">Jouw rijschool zichtbaar</p>
+        <p class="text-xl font-bold leading-7 text-[#574AE2]">Jouw schoonheidskliniek zichtbaar</p>
       </dt>
       <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-        <p class="flex-auto">Wordt vindbaar wanneer een leerling intresse heeft.</p>
+        <p class="flex-auto">Wordt vindbaar wanneer een klant intresse heeft.</p>
       </dd>
     </div>
   </dl>
@@ -249,7 +250,7 @@ on:inview_change={handleInView}
           <div class="lg:max-w-lg">
             <p class="text-base font-semibold leading-7 text-[#574AE2]">Verhoog uw betrouwbaarheid</p>
             <h1 class="mt-2 text-3xl font-bold tracking-tight text-[#cf04aa] sm:text-4xl">Website op maat</h1>
-            <p class="mt-6 text-xl leading-8 text-gray-500">Ons team bouwt een website op maat die past bij uw rijschool.</p>
+            <p class="mt-6 text-xl leading-8 text-gray-500">Ons team bouwt een website op maat die past bij uw schoonheidskliniek.</p>
           </div>
         </div>
       </div>
@@ -264,7 +265,7 @@ on:inview_change={handleInView}
       <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
         <div class="lg:pr-4">
           <div class="max-w-xl text-base leading-7 text-gray-500 lg:max-w-lg">
-            <p>Wij zorgen ervoor dat u boven aan op Google te vinden bent, uw website makkelijk te navigeren is en leerlingen zich sneller aanmelden.</p>
+            <p>Wij zorgen ervoor dat u boven aan op Google te vinden bent, uw website makkelijk te navigeren is en klanten zich sneller aanmelden.</p>
             <ul class="mt-8 space-y-8 text-gray-600">
               <li class="flex gap-x-3">
                 <svg class="mt-1 h-5 w-5 flex-none text-[#574AE2]" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -286,9 +287,9 @@ on:inview_change={handleInView}
                 <span><strong class="font-semibold text-gray-500">Geschikt voor elk platform.</strong> Een website geschikt voor mobiel, tablet en desktop.</span>
               </li>
             </ul>
-            <p class="mt-8">Een professionele website is van essentieel belang voor rijscholen om nieuwe leerlingen aan te trekken en hun bedrijf te laten groeien. Het vergroot de zichtbaarheid, versterkt de reputatie en bouwt vertrouwen op bij potentiële leerlingen. Door te investeren in een goed ontworpen website, kunt u het aantal leads verhogen en uw rijschool laten groeien.</p>
+            <p class="mt-8">Een professionele website is van essentieel belang voor schoonheidsklinieken om nieuwe klanten aan te trekken en hun bedrijf te laten groeien. Het vergroot de zichtbaarheid, versterkt de reputatie en bouwt vertrouwen op bij potentiële klanten. Door te investeren in een goed ontworpen website, kunt u het aantal leads verhogen en uw schoonheidskliniek laten groeien.</p>
             <h2 class="mt-16 text-2xl font-bold tracking-tight text-[#574AE2]">Geen geld voor een website? Geen probleem.</h2>
-            <p class="mt-6">Investeer in een nieuwe website voor uw rijschool en betaal in 2 jaar maandelijks af. Zo spreidt u de kosten en behoudt u uw cashflow. Het is een slimme en toegankelijke manier om te investeren in de groei van uw rijschool.</p>
+            <p class="mt-6">Investeer in een nieuwe website voor uw schoonheidskliniek en betaal in 2 jaar maandelijks af. Zo spreidt u de kosten en behoudt u uw cashflow. Het is een slimme en toegankelijke manier om te investeren in de groei van uw schoonheidskliniek.</p>
           </div>
         </div>
       </div>

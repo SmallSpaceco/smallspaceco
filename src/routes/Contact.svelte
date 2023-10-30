@@ -21,7 +21,7 @@
           FIRSTNAME: event.target.FIRSTNAME.value,
           LASTNAME: event.target.LASTNAME.value,
           SMS: "+31" + event.target.SMS.value,
-          RIJSCHOOL: event.target.RIJSCHOOL.value,
+          schoonheidskliniek: event.target.schoonheidskliniek.value,
         },
         listIds: [5],
         updateEnabled: false,
@@ -49,8 +49,8 @@
 <!-- laten we praten -->
 <div class="relative isolate px-6 py-24 sm:py-32 lg:px-8">
     <div class="mx-auto max-w-xl lg:max-w-4xl">
-      <h2 class="text-4xl font-bold tracking-tight">Vrijblijvend advies over uw rijschool</h2>
-      <p class="mt-2 text-lg leading-8 text-gray-500">Een gesprek met tips voor uw rijschool zonder kosten.</p>
+      <h2 class="text-4xl font-bold tracking-tight">Vrijblijvend advies over uw schoonheidskliniek</h2>
+      <p class="mt-2 text-lg leading-8 text-gray-500">Een gesprek met tips voor uw schoonheidskliniek zonder kosten.</p>
       <div class="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
         <form on:submit={handleSubmit} class="lg:flex-auto" autocomplete="on" id="sib-form" method="POST" action="https://fd40632e.sibforms.com/serve/MUIEALGteEaDVAxCcXMijG66ZdhxxSEVRIhqMXG_qrY3aMMSENJRQqu1gogO8rDJIGiHhtE7ENfx9_i-aQhAAyUKdFsM0E9lx5KweqCMMVTCLqdBUF1W1HQqztH-g0RLxUqt52rqEL031rEa1lh8ft061_tZKvUmX76m2hjNrbjXmVzvTCN5-CKHIA6-IqxBZ4_LOz9sIMG-FArO" data-type="subscription">
           <div class="grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2">
@@ -67,9 +67,9 @@
               </div>
             </div>
             <div>
-              <label for="RIJSCHOOL" class="block text-sm font-semibold leading-6" data-required="*">Rijschool naam</label>
+              <label for="schoonheidskliniek" class="block text-sm font-semibold leading-6" data-required="*">schoonheidskliniek naam</label>
               <div class="mt-2.5">
-                <input id="RIJSCHOOL" name="RIJSCHOOL" type="text" placeholder="Uw Rijschool naam" data-required="true" required class="placeholder:text-gray-500 block w-full rounded-md border-0 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                <input id="schoonheidskliniek" name="schoonheidskliniek" type="text" placeholder="Uw schoonheidskliniek naam" data-required="true" required class="placeholder:text-gray-500 block w-full rounded-md border-0 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               </div>
             </div>
 
@@ -103,7 +103,7 @@
             <!-- bellen is sneller -->
             <div class="mt-6 text-sm text-center text-gray-500">
                 <h1 class="text-xl mt-5">Bellen is nog sneller</h1>
-              <p>24/7 bereikbaar: <a href="tel:0850805848" class="text-indigo-600 hover:text-indigo-500">085 080 5848</a></p>
+              <p>24/7 bereikbaar: <a href="tel:0850805848" class="text-indigo-600 hover:text-indigo-500">+31 6 20020232</a></p>
           </div>
         </form>
         <div class="lg:mt-6 lg:w-80 lg:flex-none">
@@ -111,11 +111,11 @@
             <h1 class="text-lg">Contact</h1>
             <div class="align-middle flex mt-1">
               <iconify-icon class="mr-2" icon="material-symbols:mail-outline-rounded" style="color: white;" width="32" height="32"></iconify-icon>
-              <h2>Info@levelmarketing.nl</h2>
+              <h2>smallspacecooperation@gmail.nl</h2>
             </div>
             <div class="align-middle flex mt-3">
               <iconify-icon class="mr-2" icon="mdi:telephone" style="color: white;" width="32" height="32"></iconify-icon>
-              <h2>085 080 5848</h2>
+              <h2>06 20020232</h2>
             </div>
           </div>
           <figure class="mt-10">
@@ -125,8 +125,8 @@
             <figcaption class="mt-10 flex gap-x-6">
               <img src="/tino.png" alt="" class="h-12 w-12 flex-none rounded-full bg-gray-50">
               <div>
-                <div class="text-base font-semibold">Valentino Kuldipsingh</div>
-                <div class="text-sm leading-6 text-gray-600">Projectmanager / Communicatie</div>
+                <div class="text-base font-semibold">Dirk van Zuijlen</div>
+                <div class="text-sm leading-6 text-gray-600">Eigenaar en advertentiebeheer</div>
               </div>
             </figcaption>
           </figure>
